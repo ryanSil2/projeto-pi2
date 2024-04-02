@@ -16,87 +16,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <div class="carousel rounded-box relative">
-    <div class="carousel-item grid place-items-center">
-      <img class="h-screen w-screen relative object-cover" src="./img/home.jpg" alt="Burger" />
+  <aside class="bg-lime-100 fixed w-full z-10">
+<nav class="flex justify-end">
+  <a href="#" class=" px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">Home</a>
+  <a href="#" class=" px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">About</a>
+  <a href="#" class=" px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">Services</a
+  </nav>
+  </aside>
 
-      <div class="absolute top-0 left-3/4 max-lg:left-[60%] text-white">
-        <ul class="flex">
-          <li><a class="p-5 hover:underline" href="#login">Login</a></li>
-          <li><a class="p-5 hover:underline" href="#home">Home</a></li>
-          <li><a class="p-5 hover:underline" href="#compras">Compras</a></li>
-        </ul>
-      </div>
-
-      <div class="absolute text-center border-4 border-white p-40 px-60">
-        <h1 class="text-6xl text-white">Natureza<br>Viva</h1>
-
-        <button class="text-white text-3xl absolute -left-96 max-lg:-left-8 top-2/4"><</button>
-        <button class="text-white text-3xl absolute -right-96 max-lg:-right-8 top-2/4" onclick="tchau()">></button>
-      </div>
-    </div>
-    <div id="slide2" class="carousel-item relative">
-      <img class="h-screen w-screen relative object-cover" src="./img/home2.jpg" alt="Burger" />
-
-      <h1 class="text-6xl text-black absolute text-center right-[75%] bottom-[55%]">Natureza<br>Viva</h1>
-      <div class="absolute flex gap-4 bottom-20 right-40">
-      <div class="card w-72 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-        
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
+  <section class="">
+    <div class="carousel w-full h-screen">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./img/home.jpg" class="w-full object-cover" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button class="btn btn-circle b1">❮</button> 
+          <button class="btn btn-circle b2">❯</button>
         </div>
-      </div>
-
-      <div class="card w-72 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-         
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./img/home2.jpg" class="w-full object-cover" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button class="btn btn-circle b1" onclick="slideBack()">❮</button> 
+          <button class="btn btn-circle b2">❯</button>
         </div>
-      </div>
-
-      <div class="card w-72 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-         
-        </figure>
-        <div class="card-body items-center text-center">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./img/home3.jpg" class="w-full object-cover" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button class="btn btn-circle b1">❮</button> 
+          <button class="btn btn-circle b2">❯</button>
         </div>
-      </div>
+      </div> 
     </div>
 
-      <div class="absolute top-0 left-3/4 max-lg:left-[60%] text-black">
-        <ul class="flex">
-          <li class="m-2"><a class="p-5 hover:underline" href="#login">Login</a></li>
-          <li class="m-2"><a class="p-5 hover:underline" href="#home">Home</a></li>
-          <li class="m-2"><a class="p-5 hover:underline" href="#compras">Compras</a></li>
-        </ul>
-
-        <button class="text-black text-3xl absolute top-[980%] max-lg:top-[980%] right-0">></button>
-        <button class="text-black text-3xl absolute -bottom-[950%] -left-[360%] max-lg:-bottom-[950%] -left-[150%]" onclick="p()"><</button>
-
-      </div>
-
-     
-    </div>
-   
-  </div>
-
-    
+    <script src="./js/carrosel.js"></script>
+  </section>
 </body>
 </html>
