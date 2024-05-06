@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("../images/bg-signup.png");
+  background-image: url("../images/kyle-glenn-SrASYZZpyjw-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed
@@ -32,7 +32,7 @@ body {
 h1{
   text-align: center;
   margin-bottom: 20px;
-  color: #0d009c
+  color: #070608
 }
 
 .label-float input{
@@ -40,7 +40,7 @@ h1{
   padding: 5px 5px;
   display: inline-block;
   border: 0;
-  border-bottom: 2px solid #0d009c;
+  border-bottom: 2px solid #070608;
   background-color: transparent;
   outline: none;
   min-width: 180px;
@@ -58,12 +58,11 @@ h1{
 }
 
 .label-float input:focus{
-  border-bottom: 2px solid #4038a0;
+  border-bottom: 2px solid #070608;
 }
 
 .label-float label{
-  color: #0d009c;
-  pointer-event: none;
+  color: #070608;
   position: absolute;
   top: 0;
   left: 0;
@@ -75,13 +74,12 @@ h1{
 .label-float input:valid + label{
   font-size: 13px;
   margin-top: 0;
-  color: #4038a0
+  color: #070608
 }
 
 button{
   background-color: transparent;
-  border-color: #0d009c;
-  color: #0d009c;
+  border-color: #070608;
   padding: 7px;
   font-weight: bold;
   font-size: 12pt;
@@ -93,8 +91,8 @@ button{
 }
 
 button:hover{
-  background-color: #0d009c;
-  color: #fff;
+  background-color: #0F211C;
+  color: #e2e2e2;
 }
 
 .justify-center{
@@ -107,13 +105,13 @@ button:hover{
   top: 15px;
   right: 10px;
   cursor: pointer;
-  color: #0d009c;
+  color: #070608;
 }
 
 #msgError{
   text-align: center;
-  color: #ff0000;
-  background-color: #ffbbbb;
+  color: crimson;
+  background-color: rgba(0, 0, 0, 0.772);
   padding: 10px;
   border-radius: 4px;
   display: none;
