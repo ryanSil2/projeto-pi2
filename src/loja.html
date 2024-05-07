@@ -19,14 +19,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[url('./img/bg-loja.jpg')] bg-no-repeat bg-cover">
-    <main class="h-screen">
+
+    <header>
+        <aside class="bg-[#0F211C] fixed w-full z-50">
+            <nav class="flex justify-end">
+              <a href="#home" class=" px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-black focus:outline-none  transition duration-150 ease-in-out">Home</a>
+              <a href="#loja" class=" px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-black focus:outline-none  transition duration-150 ease-in-out">Compras</a>
+              <a href="#login" class=" px-4 py-2 text-sm text-white hover:bg-gray-100 hover:text-black focus:outline-none  transition duration-150 ease-in-out">Login</a
+              </nav>
+              </aside>
+    </header>
+
+    <main style="font-family: Hepta Slab;" class="h-screen">
         <div class="flex flex-col items-center space-y-20">
-            <div class="flex justify-between items-center bg-white w-full h-30 mt-32 max-w-[90%] rounded-3xl">
-                <div class="text-2xl text-black ml-10">
+            <div class="flex justify-between items-center bg-white w-full h-30 mt-24 max-w-[90%] rounded-3xl lg:max-w-[65%]">
+                <div class="text-3xl text-black ml-10">
                     <h2>ingresso<br>individual</h2>
                 </div>
                 <div>
-                   <img src="./img/Group 1.svg" alt="" class="h-24">
+                   <img src="./img/Group 1.svg" alt="" class="h-[5.7rem] mr-10">
                  
                 </div>
                 <div class="flex flex-col gap-10  items-center px-5 py-4">
@@ -39,9 +50,9 @@
                 </div>
             </div>
 
-            <div class="flex justify-between items-center bg-white w-full h-30 mt-32 max-w-[90%] rounded-3xl">
-                <div class="text-2xl text-black ml-10">
-                    <h2>ingresso<br>individual</h2>
+            <div class="flex justify-between items-center bg-white w-full h-30 max-w-[90%] rounded-3xl lg:max-w-[65%]">
+                <div class="text-3xl text-black ml-10">
+                    <h2>pacote<br>familia</h2>
                 </div>
                 <div>
                    <img src="./img/Group 2.svg" alt="" class="h-24">
@@ -57,12 +68,12 @@
                 </div>
             </div>
 
-            <div class="flex justify-between items-center bg-white w-full h-30 mt-32 max-w-[90%] rounded-3xl">
-                <div class="text-2xl text-black ml-10">
-                    <h2>ingresso<br>individual</h2>
+            <div class="flex justify-between items-center bg-white w-full h-30 max-w-[90%] rounded-3xl lg:max-w-[65%]">
+                <div class="text-3xl text-black ml-10">
+                    <h2>ingresso<br>estudante<br>/idoso</h2>
                 </div>
                 <div>
-                   <img src="./img/Group 3.svg" alt="" class="h-24">
+                   <img src="./img/Group 3.svg" alt="" class="h-24 mr-8">
                  
                 </div>
                 <div class="flex flex-col gap-10  items-center px-5 py-4">
@@ -74,7 +85,17 @@
                     </div>
                 </div>
             </div>
+            <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                <div class="collapse-title text-xl font-medium">
+                  Focus me to see contentadawd
+                </div>
+                <div class="collapse-content"> 
+                  <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+              </div>
         </div>
+
+        
     </main>
 </body>
 </html>
