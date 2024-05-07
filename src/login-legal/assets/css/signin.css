@@ -62,7 +62,7 @@ h1{
 
 .label-float label{
   color: #070608;
-  pointer-event: none;
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
