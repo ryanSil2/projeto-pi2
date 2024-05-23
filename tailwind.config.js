@@ -1,23 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", 
+  content: ["./src/**/*.{html,js}",
+  "./node_modules/preline/dist/*.js,html",
   ],
-
-
+  
   theme: {
-    extend: {
-      gridTemplateColumns: {
-        'padrao': '1fr 1.5fr'
-      }
-    },
-    screens: {
-      
-    }
+    extend: {},
   },
-  plugins: [require('@tailwindcss/typography'),
-  require("daisyui")
-
-] , tailwindcss: {},
-autoprefixer: {},
+  plugins: [require('preline/plugin'),
+  require('daisyui'),
+  ],
 }
 

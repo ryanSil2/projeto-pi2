@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=:ital@0;1&family=Hepta+Slab:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('./img/bg-loja.jpg')] bg-no-repeat bg-cover">
+
+    <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0 fixed">
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div class="flex items-center justify-end">
+            <div class="sm:hidden">
+              <button type="button" class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="hs-collapse-open:block flex-shrink-0 hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
+              <a class="font-medium text-blue-600 sm:py-6" href="/" aria-current="page">home</a>
+              <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="#">Conta</a>
+              <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="loja.html">Compras</a>
+              <a class="flex items-center gap-x-2 font-medium text-gray-500 hover:text-blue-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6" href="/register">
+                <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                </svg>
+                Log in
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <main style="font-family: Hepta Slab;" class="h-screen">
+        <div class="flex flex-col items-center space-y-20">
+            <div class="flex justify-between items-center bg-white w-full h-30 mt-24 max-w-[90%] rounded-3xl lg:max-w-[65%] relative before:text-2xl before:text-black before:absolute before:top-0 before:left-4 ingresso">
+                <div class="text-3xl text-black ml-10">
+                    <h2>ingresso<br>individual</h2>
+                </div>
+                <div>
+                   <img src="./img/Group 1.svg" alt="" class="h-[5.7rem] mr-10">
+                 
+                </div>
+                <div class="flex flex-col gap-10  items-center px-5 py-4">
+                    <div>
+                        <img src="./img/ticket.svg" alt="" class="h-10 cursor-pointer">
+                    </div>
+                    <div onclick="adicionar()">
+                        <img src="./img/mais.svg" alt="" class="h-8 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center bg-white w-full h-30 max-w-[90%] rounded-3xl lg:max-w-[65%] relative before:text-2xl before:text-black before:absolute before:top-0 before:left-4 ingresso-familia">
+                <div class="text-3xl text-black ml-10">
+                    <h2>pacote<br>familia</h2>
+                </div>
+                <div>
+                   <img src="./img/Group 2.svg" alt="" class="h-24">
+                 
+                </div>
+                <div class="flex flex-col gap-10  items-center px-5 py-4">
+                    <div>
+                        <img src="./img/ticket.svg" alt="" class="h-10 cursor-pointer">
+                    </div>
+                    <div onclick="adicionarF()">
+                        <img src="./img/mais.svg" alt="" class="h-8 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center bg-white w-full h-30 max-w-[90%] rounded-3xl lg:max-w-[65%] relative before:text-2xl before:text-black before:absolute before:top-0 before:left-4 ingresso-idoso">
+                <div class="text-3xl text-black ml-10">
+                    <h2>ingresso<br>estudante<br>/idoso</h2>
+                </div>
+                <div>
+                   <img src="./img/Group 3.svg" alt="" class="h-24 mr-8">
+                 
+                </div>
+                <div class="flex flex-col gap-10  items-center px-5 py-4">
+                    <div>
+                        <img src="./img/ticket.svg" alt="" class="h-10 cursor-pointer">
+                    </div>
+                    <div onclick="adicionarI()">
+                        <img src="./img/mais.svg" alt="" class="h-8 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn btn-wide" onclick="comprar()">Comprar</button>
+          
+        </div>
+        
+    </main>
+
+    <script>
+        const ingresso = document.querySelector(".ingresso");
+        const ingressoF = document.querySelector(".ingresso-familia");
+        const ingressoI = document.querySelector(".ingresso-idoso");
+       
+        let contador = 0;
+        let contadorF = 0;
+        let contadorI = 0;
+        function adicionar() {
+            contador++;
+            ingresso.classList.add(`before:content-['${contador}x']`);
+        }
+
+        function adicionarF() {
+            contadorF = 1;
+            ingressoF.classList.add(`before:content-['${contadorF}x']`);
+        }
+
+        function adicionarI() {
+            contadorI++;
+            ingressoI.classList.add(`before:content-['${contadorI}x']`);
+        }
+
+        function comprar() {
+            let item = localStorage.getItem("token")
+            if (item === null) {
+                window.alert("voce precisa estar logado")
+            } else {
+             window.alert("ja é")
+            }
+           
+        }
+
+        function colocar() {
+            localStorage.setItem("usuario", "usuario")
+        }
+    </script>
+</body>
+</html>
